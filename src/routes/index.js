@@ -4,6 +4,7 @@ const datos={
     "url": "string",
     "details": "Una url publica hacia donde este api va a publicar la informacion de los sensores"
 };
+
 router.get('/',(req,res)=>{
     res.send(datos);
 });

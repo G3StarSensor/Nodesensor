@@ -1,9 +1,12 @@
 const { Router } = require("express");
 const router=Router();
-const naves=require('../sample.json')
-router.get('/naves',(req,res)=>{
-    res.json(naves);
+const naves=require('../sample.json');
+
+router.get('/naves',(req, res) => {
+	res.json(naves)
 });
+
+
 router.post('/almacenarnaves',(req,res)=>{
     const{fecha,maquina,megatones,otrodato}=req.body;
     if(fecha&&maquina&&megatones&&otrodato){
